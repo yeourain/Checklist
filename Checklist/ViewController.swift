@@ -5,8 +5,10 @@
 //  Created by HYUN LEE on 29/3/2022.
 //
 
+// use swift UI kit
 import UIKit
 
+// Create a model that's going to represent each of our entries in checklist
 class ChecklistItem {
     let title: String
     var isChecked: Bool = false
