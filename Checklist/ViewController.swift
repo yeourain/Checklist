@@ -19,12 +19,12 @@ class ChecklistItem {
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let items: [ChecklistItem] = [
-        "Get Milk",
-        "Go ON a Long Run",
-        "Make YouTube Videos",
-        "Do Something Fun",
-        "Go on a long walk",
-        "Pretend to be productive"
+        "Digital",
+        "Gold Coast",
+        "Logan",
+        "Mt Gravatt",
+        "Nathan",
+        "South Bank"
     ].compactMap({
         ChecklistItem(title: $0)
     })
@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Checklist"
+        title = "Griffith Campuses"
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
